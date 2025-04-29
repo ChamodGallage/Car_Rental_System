@@ -8,7 +8,7 @@ const addFeedback = asyncHandler(async (req, res) => {
   const { age, gender, district, preferred_package, usage, suggestion, find, type, comment, rating } = req.body;
 
   const userId = req.user._id;
-  const cusname = req.user.name;
+  const cusname = req.user.name; 
 
   // Validate age
  const ageNumber = Number(age);
