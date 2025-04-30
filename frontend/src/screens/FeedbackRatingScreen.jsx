@@ -117,7 +117,7 @@ const FeedbackRatingScreen = () => {
 
   const formattedDate = currentDate.toLocaleDateString();
 
-  // handle select fields
+  // handle the select fields
   const handleGenderChange = (event) => {
     setGender(event.target.value);
   };
