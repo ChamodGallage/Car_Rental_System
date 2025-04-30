@@ -8,13 +8,14 @@ const addFeedback = asyncHandler(async (req, res) => {
   const { age, gender, district, preferred_package, usage, suggestion, find, type, comment, rating } = req.body;
 
   const userId = req.user._id;
-  const cusname = req.user.name;
+  const cusname = req.user.name; 
 
   // Validate age
-  if (!Number.isInteger(age) || age <= 0) {
-    res.status(400);
-    throw new Error("Age must be a positive integer");
-  }
+ const ageNumber = Number(age);
+ if (!Number.isInteger(ageNumber) || ageNumber <= 0) {
+     res.status(400);
+     throw new Error("Age must be a positive integer");
+ }
 
   // Validate required fields
   if (!age || !gender || !district || !preferred_package || !usage || !find || !type || !comment) {
