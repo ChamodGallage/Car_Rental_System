@@ -92,13 +92,13 @@ const Chatbot = () => {
 
             <div className='bacgroundImage3'>
                 <div className='dashboard'><img src={dashboardBG} className="dashboardImage" /></div>
-                <p className='dashTitle'>Admin Dashboard</p>
+                <p className='dashTitle'>Package AI</p>
 
                 <br />
                 <br />
 
                 <div className="chat-container">
-                    <h2>ChatBot</h2>
+                <h2 className="chatbot-heading">ChatBot</h2>
                     <div className="chat-bot" id="chat-bot">
                         {messages.map((msg, index) => (
                             <div
@@ -117,7 +117,7 @@ const Chatbot = () => {
                             onKeyDown={handleKeyPress}
                             autoFocus
                         />
-                        <button onClick={sendMessage}>Send</button>
+                        <button className="send-button" onClick={sendMessage}>Send</button>
                     </div>
                 </div>
 
