@@ -17,6 +17,7 @@ import DashboardScreen from './screens/DashboardScreen.jsx';
 import AddEVehicleScreen from './screens/AddEVehicleScreen.jsx';
 import PackageScreen from './screens/PackageScreen.jsx';
 import PackageHomeScreen from './screens/PackageHomeScreen.jsx';
+import Chatbot from './screens/Chatbot.jsx';
 import PaymentScreen from './screens/PaymentScreen.jsx';
 import MaintenanceScreen from './screens/MaintenanceScreen.jsx';
 import DamageScreen from './screens/DamageScreen.jsx';
@@ -68,6 +69,7 @@ const router = createBrowserRouter(
         <Route path='/vehicle_categories' element={<EVehicleCategories />} />
         <Route path='/packages' element={<PackageScreen />} />
         <Route path='/packageshome' element={<PackageHomeScreen />} />
+        <Route path='/chatbot' element={<Chatbot />}  />
         <Route path='/packagesdetail' element={<PackageDetailsScreen />} />
         <Route path='/payment' element={<PaymentScreen />} />
         <Route path='/booking' element={<VehicleBookingScreen />} />
