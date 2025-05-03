@@ -88,9 +88,17 @@ const PackageHomeScreen = () => {
                 </div>
                 
                 <div className='customizePack'>
-                    <p className='packCusTitle'> By customize, <br /> You can create own package  </p>
-                    <Link to='/packages'>  <button className='customizePackagesButton'>Customize</button></Link>
+                     <p className='packCusTitle'> By customize, <br /> You can create own package  </p>
+                     <div className='customize-button-group'>
+                    <Link to='/packages'>
+                        <button className='customizePackagesButton'>Customize</button>
+                    </Link>
+                    <Link to='/chatbot'>
+                        <button className='autoGenerateButton'>Auto Generate</button>
+                    </Link>
                 </div>
+            </div>
+
 
             </div>
 
